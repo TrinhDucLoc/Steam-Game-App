@@ -1,0 +1,432 @@
+<!DOCTYPE html>
+<html>
+        <head>
+            <meta charset="UTF-8" />
+            <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+            <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+            <title>Solution STEAM</title>
+            <link rel="preconnect" href="https://fonts.googleapis.com" />
+            <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+            <link
+            href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;500;700;900&display=swap"
+            rel="stylesheet"
+            />
+            <link rel="stylesheet" href="./style.css" />
+            <meta name="viewport" content="width=device-width, initial-scale=1"/>
+        </head>
+
+    <body>
+        <!-- Header -->
+        <header>
+        <div class="responsive_header_content">
+            <div class="responsive_header_logo">
+            <a
+                href="https://store.steampowered.com/?snr=1_4_4__global-responsive-menu"
+            >
+                <img
+                src="https://store.cloudflare.steamstatic.com/public/shared/images/responsive/header_logo.png"
+                height="36"
+                alt="STEAM"
+                />
+            </a>
+            </div>
+            <h3 id="displayTitle">All Games</h3>
+            <div class="nav_links">
+            <li>Home</li>
+            <li>Trending</li>
+            <li>About us</li>
+            </div>
+        </div>
+        </header>
+
+        <!-- Main -->
+        <main>
+        <div class="search_area">
+            <div id="store_search">
+                <h1 id="search_title">Search For Game</h1>
+                <form name="searchForm">
+                    <div class="searchbox">
+                    <input
+                        id="searchForm"
+                        name="searchForm"
+                        type="text"
+                        class="default"
+                        placeholder="keywords"
+                        size="22"
+                        maxlength="64"
+                    />
+                    <div id="store_search_link">
+                        <img
+                        src="https://store.cloudflare.steamstatic.com/public/images/blank.gif"
+                        />
+                    </div>
+                    </div>
+                </form>
+                <div class="category">
+                    <h1 id="category_title">Category</h1>
+                    <ul class="categoryGroup">
+
+                    </ul>
+                </div>
+                </div>
+            
+            </div>
+        <div class="showing_game" id="display"> Loading...
+    
+            <!-- <div>
+            <div class="game_wrapper">
+                <div class="cover" onclick="appDetail(552990)">
+                <img
+                    src="https://cdn.akamai.steamstatic.com/steam/apps/552990/header.jpg?t=1654241691"
+                    data-id="552990"
+                />
+                <div class="game_info">
+                    <p>World of Warships</p>
+                    <p>Free to Play</p>
+                </div>
+                </div>
+            </div>
+            </div>
+            <div>
+            <div class="game_wrapper">
+                <div class="cover" onclick="appDetail(1446780)">
+                <img
+                    src="https://cdn.akamai.steamstatic.com/steam/apps/1446780/header.jpg?t=1652718794"
+                    data-id="1446780"
+                />
+                <div class="game_info">
+                    <p>MONSTER HUNTER RISE</p>
+                    <p>59,99€</p>
+                </div>
+                </div>
+            </div>
+            </div>
+            <div>
+            <div class="game_wrapper">
+                <div class="cover" onclick="appDetail(359550)">
+                <img
+                    src="https://cdn.akamai.steamstatic.com/steam/apps/359550/header.jpg?t=1647433052"
+                    data-id="359550"
+                />
+                <div class="game_info">
+                    <p>Tom Clancy's Rainbow Six® Siege</p>
+                    <p>19,99€</p>
+                </div>
+                </div>
+            </div>
+            </div>
+            <div>
+            <div class="game_wrapper">
+                <div class="cover" onclick="appDetail(431960)">
+                <img
+                    src="https://cdn.akamai.steamstatic.com/steam/apps/431960/header.jpg?t=1637933048"
+                    data-id="431960"
+                />
+                <div class="game_info">
+                    <p>Wallpaper Engine</p>
+                    <p>3,99€</p>
+                </div>
+                </div>
+            </div>
+            </div>
+            <div>
+            <div class="game_wrapper">
+                <div class="cover" onclick="appDetail(1174180)">
+                <img
+                    src="https://cdn.akamai.steamstatic.com/steam/apps/1174180/header.jpg?t=1618851907"
+                    data-id="1174180"
+                />
+                <div class="game_info">
+                    <p>Red Dead Redemption 2</p>
+                    <p>59,99€</p>
+                </div>
+                </div>
+            </div>
+            </div>
+            <div>
+            <div class="game_wrapper">
+                <div class="cover" onclick="appDetail(1250410)">
+                <img
+                    src="https://cdn.akamai.steamstatic.com/steam/apps/1250410/header.jpg?t=1647979760"
+                    data-id="1250410"
+                />
+                <div class="game_info">
+                    <p>Microsoft Flight Simulator Game of the Year Edition</p>
+                    <p>69,99€</p>
+                </div>
+                </div>
+            </div>
+            </div>
+            <div>
+            <div class="game_wrapper">
+                <div class="cover" onclick="appDetail(227300)">
+                <img
+                    src="https://cdn.akamai.steamstatic.com/steam/apps/227300/header.jpg?t=1653033923"
+                    data-id="227300"
+                />
+                <div class="game_info">
+                    <p>Euro Truck Simulator 2</p>
+                    <p>19,99€</p>
+                </div>
+                </div>
+            </div>
+            </div>
+            <div>
+            <div class="game_wrapper">
+                <div class="cover" onclick="appDetail(1326470)">
+                <img
+                    src="https://cdn.akamai.steamstatic.com/steam/apps/1326470/header.jpg?t=1651770807"
+                    data-id="1326470"
+                />
+                <div class="game_info">
+                    <p>Sons Of The Forest</p>
+                    <p></p>
+                </div>
+                </div>
+            </div>
+            </div>
+            <div>
+            <div class="game_wrapper">
+                <div class="cover" onclick="appDetail(294100)">
+                <img
+                    src="https://cdn.akamai.steamstatic.com/steam/apps/294100/header.jpg?t=1650485223"
+                    data-id="294100"
+                />
+                <div class="game_info">
+                    <p>RimWorld</p>
+                    <p>29,99€</p>
+                </div>
+                </div>
+            </div>
+            </div>
+            <div>
+            <div class="game_wrapper">
+                <div class="cover" onclick="appDetail(1846700)">
+                <img
+                    src="https://cdn.akamai.steamstatic.com/steam/apps/1846700/header.jpg?t=1654088488"
+                    data-id="1846700"
+                />
+                <div class="game_info">
+                    <p>Witchbrook</p>
+                    <p></p>
+                </div>
+                </div>
+            </div>
+            </div>
+            <div>
+            <div class="game_wrapper">
+                <div class="cover" onclick="appDetail(552500)">
+                <img
+                    src="https://cdn.akamai.steamstatic.com/steam/apps/552500/header.jpg?t=1654105047"
+                    data-id="552500"
+                />
+                <div class="game_info">
+                    <p>Warhammer: Vermintide 2</p>
+                    <p>27,99€5,59€</p>
+                </div>
+                </div>
+            </div>
+            </div>
+            <div>
+            <div class="game_wrapper">
+                <div class="cover" onclick="appDetail(1676840)">
+                <img
+                    src="https://cdn.akamai.steamstatic.com/steam/apps/1676840/header.jpg?t=1653584534"
+                    data-id="1676840"
+                />
+                <div class="game_info">
+                    <p>For The King II</p>
+                    <p></p>
+                </div>
+                </div>
+            </div>
+            </div>
+            <div>
+            <div class="game_wrapper">
+                <div class="cover" onclick="appDetail(1361210)">
+                <img
+                    src="https://cdn.akamai.steamstatic.com/steam/apps/1361210/header.jpg?t=1654103087"
+                    data-id="1361210"
+                />
+                <div class="game_info">
+                    <p>Warhammer 40,000: Darktide</p>
+                    <p>39,99€</p>
+                </div>
+                </div>
+            </div>
+            </div>
+            <div>
+            <div class="game_wrapper">
+                <div class="cover" onclick="appDetail(892970)">
+                <img
+                    src="https://cdn.akamai.steamstatic.com/steam/apps/892970/header.jpg?t=1647939640"
+                    data-id="892970"
+                />
+                <div class="game_info">
+                    <p>Valheim</p>
+                    <p>16,79€</p>
+                </div>
+                </div>
+            </div>
+            </div>
+            <div>
+            <div class="game_wrapper">
+                <div class="cover" onclick="appDetail(534380)">
+                <img
+                    src="https://cdn.akamai.steamstatic.com/steam/apps/534380/header.jpg?t=1653472185"
+                    data-id="534380"
+                />
+                <div class="game_info">
+                    <p>Dying Light 2 Stay Human</p>
+                    <p>59,99€</p>
+                </div>
+                </div>
+            </div>
+            </div>
+            <div>
+            <div class="game_wrapper">
+                <div class="cover" onclick="appDetail(1569040)">
+                <img
+                    src="https://cdn.akamai.steamstatic.com/steam/apps/1569040/header.jpg?t=1649351903"
+                    data-id="1569040"
+                />
+                <div class="game_info">
+                    <p>Football Manager 2022</p>
+                    <p>54,99€</p>
+                </div>
+                </div>
+            </div>
+            </div>
+            <div>
+            <div class="game_wrapper">
+                <div class="cover" onclick="appDetail(444200)">
+                <img
+                    src="https://cdn.akamai.steamstatic.com/steam/apps/444200/header.jpg?t=1654104995"
+                    data-id="444200"
+                />
+                <div class="game_info">
+                    <p>World of Tanks Blitz</p>
+                    <p>Free to Play</p>
+                </div>
+                </div>
+            </div>
+            </div>
+            <div>
+            <div class="game_wrapper">
+                <div class="cover" onclick="appDetail(undefined)">
+                <img
+                    src="https://cdn.akamai.steamstatic.com/steam/bundles/26492/y2r6s4g7eyxcoec6/header.jpg?t=1654188266"
+                    data-id="undefined"
+                />
+                <div class="game_info">
+                    <p>Best of Klei 2022</p>
+                    <p>129,59€29,20€</p>
+                </div>
+                </div>
+            </div>
+            </div>
+            <div>
+            <div class="game_wrapper">
+                <div class="cover" onclick="appDetail(393380)">
+                <img
+                    src="https://cdn.akamai.steamstatic.com/steam/apps/393380/header.jpg?t=1649877267"
+                    data-id="393380"
+                />
+                <div class="game_info">
+                    <p>Squad</p>
+                    <p>44,99€</p>
+                </div>
+                </div>
+            </div>
+            </div>
+            <div>
+            <div class="game_wrapper">
+                <div class="cover" onclick="appDetail(960090)">
+                <img
+                    src="https://cdn.akamai.steamstatic.com/steam/apps/960090/header.jpg?t=1634303522"
+                    data-id="960090"
+                />
+                <div class="game_info">
+                    <p>Bloons TD 6</p>
+                    <p>8,19€</p>
+                </div>
+                </div>
+            </div>
+            </div>
+            <div>
+            <div class="game_wrapper">
+                <div class="cover" onclick="appDetail(1151340)">
+                <img
+                    src="https://cdn.akamai.steamstatic.com/steam/apps/1151340/header.jpg?t=1654119493"
+                    data-id="1151340"
+                />
+                <div class="game_info">
+                    <p>Fallout 76</p>
+                    <p>39,99€</p>
+                </div>
+                </div>
+            </div>
+            </div>
+            <div>
+            <div class="game_wrapper">
+                <div class="cover" onclick="appDetail(218620)">
+                <img
+                    src="https://cdn.akamai.steamstatic.com/steam/apps/218620/header.jpg?t=1653004245"
+                    data-id="218620"
+                />
+                <div class="game_info">
+                    <p>PAYDAY 2</p>
+                    <p>9,99€</p>
+                </div>
+                </div>
+            </div>
+            </div>
+            <div>
+            <div class="game_wrapper">
+                <div class="cover" onclick="appDetail(394360)">
+                <img
+                    src="https://cdn.akamai.steamstatic.com/steam/apps/394360/header.jpg?t=1652356929"
+                    data-id="394360"
+                />
+                <div class="game_info">
+                    <p>Hearts of Iron IV</p>
+                    <p>39,99€</p>
+                </div>
+                </div>
+            </div>
+            </div>
+            <div>
+            <div class="game_wrapper">
+                <div class="cover" onclick="appDetail(813780)">
+                <img
+                    src="https://cdn.akamai.steamstatic.com/steam/apps/813780/header.jpg?t=1651280373"
+                    data-id="813780"
+                />
+                <div class="game_info">
+                    <p>Age of Empires II: Definitive Edition</p>
+                    <p>19,99€</p>
+                </div>
+                </div>
+            </div>
+            </div>
+            <div>
+            <div class="game_wrapper">
+                <div class="cover" onclick="appDetail(1240440)">
+                <img
+                    src="https://cdn.akamai.steamstatic.com/steam/apps/1240440/header.jpg?t=1651604861"
+                    data-id="1240440"
+                />
+                <div class="game_info">
+                    <p>Halo Infinite</p>
+                    <p>Free To Play</p>
+                </div>
+                </div>
+            </div>
+            </div>
+        </div> -->
+        </main>
+        <footer></footer>
+
+        <script src="./script.js"></script>
+    </body>
+</html>
